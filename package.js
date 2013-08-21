@@ -7,6 +7,8 @@ Package.on_use(function (api, where) {
     api.add_files([
         'namespace.js',
     ], ['client', 'server']);
-
-    api.export("InnoAccel");
+	
+	if(api.export){
+    	api.export("InnoAccel");
+    }
 });
